@@ -9,9 +9,8 @@ import request from '../request'
 
 function App() {
   return (
-    <div className="App">
-      {/* Navbar */}
-      {/* Banner */}
+    <div className="app">
+      <Navbar />
       <Banner />
       <Row
         title="Netflix Originals"

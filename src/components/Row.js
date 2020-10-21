@@ -8,14 +8,15 @@ export default function Row({ title, url, isLargeRow }) {
   const imageBaseUrl = 'https://image.tmdb.org/t/p/original'
 
   useEffect(() => {
-    const fetchData = async () => {
-      const respond = await axios.get(url)
-      console.table(respond.data.results)
-      setMovies(respond.data.results)
-      return respond
+    const getData = async () => {
+      const { data } = await axios.get(url)
+      setMovies(data.results)
+      return data
     }
-    fetchData()
+    getData()
   }, [url])
+
+  // console.table(movies)
 
   return (
     <div className="row">
