@@ -12,8 +12,6 @@ function App() {
     <div className="app">
       <Navbar />
       <Banner />
-      <p>{process.env.NODE_ENV}</p>
-      <p>{process.env.REACT_APP_TMDB_API_KEY}</p>
       <Row
         title="Netflix Originals"
         url={request.fetchNetflixOriginals}

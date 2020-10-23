@@ -37,11 +37,10 @@ export default function Row({ title, url, isLargeRow }) {
         const url = await movieTrailer(
           movie?.original_name || movie?.title || movie?.name || ''
         )
-        console.log('url: ', url)
         const urlParams = new URLSearchParams(new URL(url).search)
         setTrailerUrl(urlParams.get('v'))
       } catch (error) {
-        console.log('movie trailer error:', error)
+        console.log(error)
       }
     }
   }
