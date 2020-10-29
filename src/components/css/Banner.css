@@ -65,15 +65,15 @@
   background-color: rgba(90, 90, 90, 0.5);
 }
 
-.banner_fade_bottom {
+.banner_contents::after {
+  content: '';
   position: absolute;
+  left: 0;
   bottom: 0;
   height: 15vw;
   width: 100vw;
-  background-image: linear-gradient(
-    180deg,
-    transparent,
-    rgba(37, 37, 37, 0.61), 
-    #111
-  );
+  background-image: linear-gradient(180deg,
+      transparent,
+      rgba(37, 37, 37, 0.61),
+      #111);
 }
