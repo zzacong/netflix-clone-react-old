@@ -59,6 +59,7 @@ export default function Row({ title, url, isLargeRow }) {
                 isLargeRow ? movie.poster_path : movie.backdrop_path
               }`}
               alt={movie.name}
+              loading="lazy"
             />
           )
         })}
