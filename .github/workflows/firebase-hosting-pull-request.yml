@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [main]
 env:
-  REACT_APP_TMDB_API_KEY: ${{ secrets.REACT_APP_TMDB_API_KEY }}
+  VITE_TMDB_API_KEY: ${{ secrets.VITE_TMDB_API_KEY }}
 jobs:
   build_and_preview:
     runs-on: ubuntu-latest
